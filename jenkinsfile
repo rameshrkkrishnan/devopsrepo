@@ -1,0 +1,20 @@
+pipeline {
+agent any
+stages {
+  stage ('Checkout') {
+    steps {
+      sh 'echo checking out'
+          }
+}
+  stage ('Build') {
+    steps {
+      sh 'java --version'
+          }
+}
+  stage ('Deploy') {
+    steps {
+      sh 'echo Deploy the app'
+          }
+}
+}
+}
